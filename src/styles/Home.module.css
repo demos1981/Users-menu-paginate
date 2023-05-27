@@ -1,0 +1,165 @@
+
+.wrapper{
+    min-height: 600px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.searchBlock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+.search{
+    border:2px solid grey;
+    border-radius: 5px;
+    background-color:beige ;
+  }
+  .search:hover{
+    background-color:rgb(200, 236, 203);
+    box-shadow: 10px 5px 5px rgb(142, 164, 235);
+  }
+
+  .nav{
+    display:flex;
+  }
+
+  .active{
+    margin:6px;
+    color: coral;
+    height: 30px;
+    width: 30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .picture{
+    display:flex;
+  }
+  .userList{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height:500px;
+    width: 1000px;
+  }
+  .usersCards{
+    display: flex;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .cardBody{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+    position: relative;
+    height:200px;
+    width:150px;
+    border:2px solid grey;
+    border-radius:10px;
+    margin:0 20px;
+    background-color:beige;
+    box-shadow: 10px 5px 5px grey;
+  }
+  .cardBody:hover{
+    background-color:rgb(200, 236, 203);
+    box-shadow: 10px 5px 5px rgb(142, 164, 235);
+ 
+  }
+  .usersName{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+    color:rgb(26, 24, 24);
+    font-weight: bold;
+
+  }
+  .userBlockBio{
+    display: flex;
+    height:100vh;
+    width:100vw;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .userBio{
+    height:300px;
+    width:300px;
+    border:2px solid grey;
+    background-color: beige;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px grey;
+  }
+  .details{
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .imageBlock{
+    display:flex;
+    height:50%;
+    width:50%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .paginationBlock{
+    height: 100px;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+
+  }
+  .paginationLink{
+
+display: flex;
+flex-direction: row;
+
+  }
+  .links{
+    height:30px;
+    width:30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin:5px;
+   background-color: beige;
+    border:2px solid grey;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .linksNumbersStyles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:30px;
+    width:30px;
+
+ 
+  }
+  .paginationBody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+ 
