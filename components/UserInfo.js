@@ -1,4 +1,5 @@
 
+import Link from 'next/link';
 import styles from '../src/styles/Home.module.css';
 import Image from 'next/image';
 
@@ -9,7 +10,10 @@ import Image from 'next/image';
 
  
      return(
-      
+      <>
+      <Link href={'/'}>
+      <button className={styles.backButton}>Back</button>
+      </Link>
       <div className={styles.userBlockBio}>
       <div></div>
          <div className={styles.userBio}>
@@ -39,7 +43,7 @@ import Image from 'next/image';
              
           </div>
          </div>
-        
+         </>
      )
  };
  

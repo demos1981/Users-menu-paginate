@@ -31,12 +31,15 @@
 
   .active{
     margin:6px;
-    color: coral;
+    background-color:rgb(200, 236, 203);
     height: 30px;
     width: 30px;
     display:flex;
     justify-content: center;
     align-items: center;
+    border:2px solid grey;
+    border-radius: 5px;
+    box-shadow: 2px 5px 5px rgb(142, 164, 235);
 
   }
 
@@ -76,6 +79,17 @@
     background-color:rgb(200, 236, 203);
     box-shadow: 10px 5px 5px rgb(142, 164, 235);
  
+  }
+
+  .backButton{
+    background-color: beige;
+  }
+
+  .backButton:hover{
+    cursor:pointer;
+    background-color:rgb(200, 236, 203);
+    box-shadow: 5px 5px 5px rgb(142, 164, 235);
+
   }
   .usersName{
     display: flex;

@@ -3,11 +3,19 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 
- const UsersPage = ({users}) => {
+ const UsersPage = ({users,setValue}) => {
   
   return (
  <>
-   
+      <header>  
+          <div className={styles.searchBlock}>
+              <input className={styles.search}
+              type="text"
+                placeholder="search"
+                onChange={(event)=>setValue(event.target.value)}
+                ></input>
+          </div>
+      </header>
     <div className={styles.usersCards}>
       <div className={styles.userList}>
       {users.map((user,i) => (

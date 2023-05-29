@@ -10,13 +10,22 @@ import Header from "../../components/Header";
 
 
 
-
 export default function Home({users}) {
+ const [value,setValue] = useState('');
  const [currentPage, setCurrentPage] = useState(1);
  const pageSize = 10;
 
  const paginatedPosts = pagination(users.users, currentPage, pageSize);
  console.log(paginatedPosts);
+
+ const filteredUsers = paginatedPosts.filter(user => {
+  return user.firstName.toLowerCase().includes(value.toLowerCase())
+})
+
+
+
+
+
 
  const onePageChange =(page)=>{
   setCurrentPage(page);
@@ -24,8 +33,8 @@ export default function Home({users}) {
 
   return(
     <>
-     <Header/>
-    <UsersPage users={paginatedPosts} />
+   
+    <UsersPage users={filteredUsers} setValue={setValue}/>
     <Paginate  users={users.users.length}
        currentPage={currentPage}
        pageSize={pageSize}
@@ -35,6 +44,7 @@ export default function Home({users}) {
     </>
 );
 };
+
 
 
 
