@@ -114,13 +114,17 @@
     width:300px;
     border:2px solid grey;
     background-color: beige;
+    box-shadow: 5px 5px 5px grey;
     display: flex;
     flex-direction:column;
     justify-content: space-between;
     align-items: center;
     border-radius: 10px;
-    box-shadow: 10px 5px 5px grey;
   }
+    .userBio:hover{
+      background-color:rgb(200, 236, 203);
+      box-shadow: 5px 5px 5px rgb(142, 164, 235);
+    }
   .details{
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

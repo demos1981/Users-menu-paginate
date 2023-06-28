@@ -1,12 +1,14 @@
+
+
 import styles from "../src/styles/Home.module.css";
 import Paginate from "./Paginate";
 
-const Footer=() =>(
+const Footer=()=>(
     <>
     <footer className={styles.footerPagination}>
       <div className={styles.paginationBlock}>
         <div className={styles.paginationBody}>
-           <Paginate/>
+       <Paginate/>
         </div>
       </div>
     </footer>

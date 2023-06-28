@@ -4,9 +4,25 @@ import UsersPage from "../../components/UsersPage";
 import Paginate from "../../components/Paginate";
 import { useState } from "react";
 import { pagination } from "../../components/Paginate";
-import Header from "../../components/Header";
 
 
+
+export const getStaticProps = async () => {
+  const res =await fetch(USERS_ALL);
+  const data = await res.json();
+
+
+ if(!data){
+  return{
+    notFound:true,
+  }
+ }
+
+  return {
+      props:
+      {users:data},
+  }
+};
 
 
 
@@ -52,20 +68,3 @@ export default function Home({users}) {
 
 
 
-
-export const getStaticProps = async () => {
-  const res =await fetch(USERS_ALL);
-  const data = await res.json();
-
-
- if(!data){
-  return{
-    notFound:true,
-  }
- }
-
-  return {
-      props:
-      {users:data},
-  }
-};

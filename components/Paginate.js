@@ -1,4 +1,4 @@
-import Link from "next/link";
+
 import styles from '../src/styles/Home.module.css';
 
 
@@ -7,7 +7,7 @@ import styles from '../src/styles/Home.module.css';
 
 
 
-export const pagination = (users, pageNumber, pageSize) => {
+export const pagination = ({users, pageNumber, pageSize})   => {
  
   const startIndex = (pageNumber - 1) * pageSize;
   return users.slice(startIndex, startIndex + pageSize);

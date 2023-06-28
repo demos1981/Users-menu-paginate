@@ -1,14 +1,13 @@
-import Heading from "./Heading";
-import styles from "../src/styles/Home.module.css";
-import Navigate from "./Paginate";
+import { FC } from "react";
 
-const Header=(setValue) =>(
+const Header =() =>{
 
- 
-   <>
+ return(
 
- 
-   </>
- );
+<div></div>
+
+ )
+  
+};
 
  export default Header;
